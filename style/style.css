@@ -796,25 +796,32 @@ hr {
 
 .works__item {
     position: relative;
+    overflow: hidden;
     background: linear-gradient(to bottom, #6aa390, #f8f8f8);
 }
 
-.works__item:hover .works__image {
+
+/* .works__item:hover .works__image {
     opacity: .1;
 }
 
 .works__item:hover .works__info {
     opacity: 1;
-}
+} */
 
 .works__image {
     display: block;
     max-width: 100%;
     height: auto;
-    transition: opacity .2s linear;
+    transition: transform 1s ease;
 }
 
-.works__info {
+.works__item:hover img {
+    transform: scale(1.5);
+}
+
+
+/* .works__info {
     width: 100%;
     padding: 0 15px;
     text-align: center;
@@ -826,7 +833,7 @@ hr {
     z-index: 1;
     transform: translate3d(0, -50%, 0);
     transition: opacity .2s linear;
-}
+} */
 
 .works__title {
     margin-bottom: 5px;
