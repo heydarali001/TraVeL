@@ -6,7 +6,7 @@ $(window).scroll(function() {
         var
             cPos = $(this).offset().top,
             topWindow = $(window).scrollTop();
-        if (cPos < topWindow + 600) {
+        if (cPos < topWindow + 800) {
             if (cc < 2) {
                 $('.stat__count').addClass('viz');
                 $('div').each(function() {
